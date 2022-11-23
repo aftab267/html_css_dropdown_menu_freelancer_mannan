@@ -1,0 +1,74 @@
+/*==============================
+ Common style
+===================================*/
+.menu
+{    
+	 padding: 0;
+	 list-style-type: none;	
+	 background: #4E4E4D;
+	 min-height: 52px;
+	 border-bottom: 5px solid orange;
+	 border-top: 5px solid orange;
+	 width: 950px;
+	 margin: 0 auto;	
+}
+.menu li{
+	float: left;
+	border-left: 1px solid #2e2e2e;	
+	border-right: 1px solid #000;
+	position: relative;	
+}
+.menu li a{
+	text-decoration: none;
+	background: #4E4E4D;
+	padding: 15px 20px;
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.menu li a:hover{
+	background: orange;
+}
+.menu li:last-child{
+	border-right: none;
+}
+.menu li:first-child{
+	border-left: none;
+}
+/*==============================
+ Dropdown menu style
+===================================*/
+.menu li ul{
+	list-style-type: none;
+	padding: 0px;
+	position: absolute;
+	left: -99999px;
+	
+}
+.menu li ul li{
+	float: none;
+	border-left: none;	
+	border-right: none;
+	border-top: 1px solid #2e2e2e;	
+	border-bottom: 1px solid #000;	
+	width: 200px;
+	position: relative;	
+}
+.menu li:hover ul {
+	left: 0;
+}
+/*==============================
+ Sub Dropdown menu style
+===================================*/
+.menu li ul li ul {
+	position: absolute;
+	top: -99999px;
+}
+.menu li ul li:hover ul {
+	top: 0;
+}
+.menu li ul li ul li {
+	left: 200px;
+}
+.menu li ul li ul li a:hover {}
